@@ -9,7 +9,7 @@ st.title("Option Volatility Analysis Dashboard")
 
 # Load data with caching
 def load_data():
-    df = pd.read_csv("/data/gru_data.csv", parse_dates=["date"])
+    df = pd.read_csv("data/gru_data.csv", parse_dates=["date"])
     return df
 
 df = load_data()
